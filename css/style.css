@@ -40,17 +40,7 @@
     box-sizing: content-box;
 }
 
-.behavior{
-    padding : 2px;
-    text-align : center;
-    
-    border : 1px solid grey;
-    box-shadow: 1px 1px #9999a7;
-}
 
-.behavior:hover {
-    background :red;
-}
 
 button:hover {
     background : lightgrey;
