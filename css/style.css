@@ -1,0 +1,59 @@
+
+/* 
+*{
+    border: 1px solid black;}
+
+*/
+
+
+.cell{
+    box-sizing: border-box;
+      
+    
+}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.red {
+    background : red;
+}
+.container{
+    width : 800px;
+    height: 800px;
+
+}
+
+.control {
+    height: 35px;
+
+    display : flex;
+    justify-content: space-around;
+}
+
+.grid {
+    margin : 2% auto;
+    width : 690px;
+    height: 690px;
+    box-sizing: content-box;
+}
+
+.behavior{
+    padding : 2px;
+    text-align : center;
+    
+    border : 1px solid grey;
+    box-shadow: 1px 1px #9999a7;
+}
+
+.behavior:hover {
+    background :red;
+}
+
+button:hover {
+    background : lightgrey;
+    box-shadow: inset 2px 2px 2px grey ,inset -2px -2px 2px grey;
+}
+
