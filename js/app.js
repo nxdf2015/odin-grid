@@ -2,16 +2,14 @@ $(function(){
 const width = $(".grid").width();
 
 let numberCell = 4 ; // default value
-
-
-
-   createGrid(width,numberCell); 
+ createGrid(width,numberCell); 
 
 $("button.choice").on("click",function () {
     
-    do { 
-        numberCell = Number(prompt("enter number of cells ? ")) ;
-    }while(  numberCell  <=0 );
+    do {
+        numberCell = Number(prompt("enter number of cells")) ;
+        if (isNaN(numberCell)) alert("must be a number");
+    }while( isNaN(numberCell) ||  numberCell  <=0  ||numberCell > 90 );
     removeGrid();
     createGrid(width,numberCell);});
 
@@ -21,12 +19,7 @@ $("button.remove").on("click",function(){
     createGrid(width,4);
 })
 
-
-
-
 })//end main program
-
-
 
 
 function removeGrid(){
